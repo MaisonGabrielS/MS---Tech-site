@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MS Tech | Tecnologia e Suporte</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+  <div class="container nav">
+    <a class="logo" href="index.html">MS<span>TECH</span></a>
+    <nav>
+      <a href="#inicio">Início</a><a href="#servicos">Serviços</a>
+      <a href="#sobre">Sobre</a><a href="#contato">Contato</a>
+      <a class="btn btn-small" href="login.html">Área Administrativa</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section id="inicio" class="hero">
+  <div class="container hero-grid">
+    <div>
+      <p class="eyebrow">TECNOLOGIA • SUPORTE • REDES</p>
+      <h1>Soluções inteligentes para sua tecnologia.</h1>
+      <p class="lead">Instalação de redes, manutenção de computadores e suporte técnico para residências e empresas.</p>
+      <div class="actions">
+        <a class="btn" href="#servicos">Conhecer serviços</a>
+        <a class="btn btn-outline" href="#contato">Solicitar atendimento</a>
+      </div>
+    </div>
+    <div class="hero-card"><div class="terminal">MS TECH<br><span>Seu negócio conectado.</span><br><small>STATUS: ONLINE</small></div></div>
+  </div>
+</section>
+
+<section id="servicos" class="section">
+  <div class="container">
+    <p class="eyebrow">NOSSOS SERVIÇOS</p><h2>Tecnologia sem complicação</h2>
+    <div id="servicesGrid" class="cards"></div>
+  </div>
+</section>
+
+<section id="sobre" class="section dark">
+  <div class="container two">
+    <div><p class="eyebrow">SOBRE A MS TECH</p><h2>Suporte que entende sua necessidade.</h2></div>
+    <p>Oferecemos soluções práticas em informática, redes e manutenção, com atendimento focado em segurança, desempenho e continuidade.</p>
+  </div>
+</section>
+
+<section id="contato" class="section">
+  <div class="container contact">
+    <div><p class="eyebrow">FALE CONOSCO</p><h2>Solicite um orçamento</h2><p>Preencha seus dados e entraremos em contato.</p></div>
+    <form id="contactForm" class="form">
+      <input name="name" placeholder="Nome" required>
+      <input name="phone" placeholder="Telefone / WhatsApp" required>
+      <select name="service" id="contactService" required><option value="">Selecione o serviço</option></select>
+      <textarea name="message" placeholder="Descreva sua necessidade" rows="5"></textarea>
+      <button class="btn" type="submit">Enviar solicitação</button>
+    </form>
+  </div>
+</section>
+</main>
+<footer id="footer"><div class="container">© <span id="year"></span> MS Tech. Todos os direitos reservados.</div></footer>
+<script src="script.js"></script>
+</body>
+</html>
