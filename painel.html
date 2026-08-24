@@ -15,4 +15,49 @@
                 <div class="stats">
                     <div class="stat">Serviços<strong id="statServices">0</strong></div>
                     <div class="stat">Solicitações<strong id="statRequests">0</strong>
-                    </div><div class="stat">Este mês<strong id="statMonth">0</strong></div></div><div class="admin-grid"><section class="panel"><h2>Novo serviço</h2><form id="serviceForm" class="form"><input name="name" placeholder="Nome do serviço" required><input name="icon" placeholder="Ícone (ex.: 🖥️)" value="💻"><textarea name="description" placeholder="Descrição" rows="4" required></textarea><button class="btn">Adicionar serviço</button></form><hr style="margin:25px 0;border:0;border-top:1px solid #ddd"><h2>Serviços cadastrados</h2><div id="serviceList"></div></section><section class="panel"><h2>Solicitações de atendimento</h2><div class="filters"><input id="filterDate" type="date"><select id="filterService"><option value="">Todos os serviços</option></select><button class="btn btn-small" onclick="renderRequests()">Filtrar</button><button class="btn btn-small" onclick="clearFilters()">Limpar</button></div><div class="table-wrap"><table><thead><tr><th>Data</th><th>Cliente</th><th>Telefone</th><th>Serviço</th><th>Mensagem</th><th>Ação</th></tr></thead><tbody id="requests"></tbody></table></div></section></div></main><script src="admin.js"></script></body></html>
+                    </div>
+                    <div class="stat">Este mês<strong id="statMonth">0</strong>
+                    </div>
+                </div>
+                <div class="admin-grid"><section class="panel"><h2>Novo serviço</h2>
+                    <form id="serviceForm" class="form">
+                        <input name="name" placeholder="Nome do serviço" required>
+                        <input name="icon" placeholder="Ícone (ex.: 🖥️)" value="💻">
+                        <textarea name="description" placeholder="Descrição" rows="4" required></textarea>
+                        <button class="btn">Adicionar serviço</button>
+                    </form>
+                    <hr style="margin:25px 0;border:0;border-top:1px solid #ddd">
+                    <h2>Serviços cadastrados</h2>
+                    <div id="serviceList"></div>
+                </section>
+                <section class="panel">
+                    <h2>Solicitações de atendimento</h2>
+                    <div class="filters">
+                        <input id="filterDate" type="date">
+                        <select id="filterService">
+                            <option value="">Todos os serviços</option>
+                        </select>
+                        <button class="btn btn-small" onclick="renderRequests()">Filtrar</button>
+                        <button class="btn btn-small" onclick="clearFilters()">Limpar</button>
+                    </div>
+                    <div class="table-wrap">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Data</th>
+                                    <th>Cliente</th>
+                                    <th>Telefone</th>
+                                    <th>Serviço</th>
+                                    <th>Mensagem</th>
+                                    <th>Ação</th>
+                                </tr>
+                            </thead>
+                            <tbody id="requests"></tbody>
+                        </table>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <script src="admin.js"></script>
+    </body>
+</html>
